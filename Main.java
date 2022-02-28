@@ -18,9 +18,12 @@ public class Main {
             if(X[i] < min){
                 min = X[i];
                 position = i;
+            }else if(min == 0){
+                min = X[i];
+                position = i;
             }
         }
-        System.out.println(min);
-        System.out.println(position);
+        System.out.println("Minor value: " + min);
+        System.out.println("Position: " + position);
     }
  }
